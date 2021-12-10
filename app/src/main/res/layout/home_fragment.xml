@@ -4,20 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".HomeFragment"
     >
-    <LinearLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="Home app"
-            android:textSize="24dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/widget.Evc2.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:title="@string/app_name"
             />
-    </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/shoe_title"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/shoe_description"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                />
+        </LinearLayout>
 
-
+    </com.google.android.material.card.MaterialCardView>
 </FrameLayout>
