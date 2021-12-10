@@ -4,7 +4,7 @@
     <string name="login_password">Password</string>
     <string name="login_button">Login</string>
     <string name="login_cancel_button">Cancel</string>
-    <string name="login_error_message">La contraseña debe contener al menos 6 carácteres</string>
-    <string name="shoe_title">Titulo</string>
-    <string name="shoe_description">hola, este es una nueva zapatilla :v</string>
+    <string name="login_error_message">password must have 6 characters</string>
+    <string name="shoe_title">Title</string>
+    <string name="shoe_description">hello, this is it shoes :v</string>
 </resources>
