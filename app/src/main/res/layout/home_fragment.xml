@@ -18,40 +18,19 @@
             app:titleTextColor="@color/black"
             />
     </com.google.android.material.appbar.AppBarLayout>
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="160dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="70dp"
-        app:cardBackgroundColor="@color/blue_200"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="@dimen/cardview_default_elevation"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="?attr/colorPrimary"
+        android:paddingStart="@dimen/shoe_grid_spacing"
+        android:paddingEnd="@dimen/shoe_grid_spacing"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="#ffffff"
-            android:orientation="vertical"
-            android:padding="8dp"
-            >
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/shoe_title"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="2dp"
-                android:text="@string/shoe_description"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-                />
-        </LinearLayout>
+            android:layout_height="match_parent" />
 
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>

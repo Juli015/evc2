@@ -18,8 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.reflect.Type;
 
-public class ShoesEntry {
-    private static final String TAG = ShoesEntry.class.getSimpleName();
+public class ShoeEntry {
+    private static final String TAG = ShoeEntry.class.getSimpleName();
 
     public final String title;
     public final Uri dynamicUrl;
@@ -27,7 +27,7 @@ public class ShoesEntry {
     public final String price;
     public final String description;
 
-    public ShoesEntry(String title, String dynamicUrl, String url, String price, String description) {
+    public ShoeEntry(String title, String dynamicUrl, String url, String price, String description) {
         this.title = title;
         this.dynamicUrl = Uri.parse(dynamicUrl);
         this.url = url;
@@ -35,7 +35,7 @@ public class ShoesEntry {
         this.description = description;
     }
 
-    public static List<ShoesEntry> initShoesEntryList (Resources resources) {
+    public static List<ShoeEntry> initShoesEntryList (Resources resources) {
         InputStream inputStream = resources.openRawResource(R.raw.shoes);
         Writer writer = new StringWriter();
         char[] buffer = new char[1024];
@@ -56,7 +56,7 @@ public class ShoesEntry {
         }
         String jsonshoesString = writer.toString();
         Gson gson = new Gson();
-        Type shoeListType = new TypeToken<ArrayList<ShoesEntry>>(){
+        Type shoeListType = new TypeToken<ArrayList<ShoeEntry>>(){
         }.getType();
 
         return gson.fromJson(jsonshoesString, shoeListType);
