@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="blue_200">#90caf9</color>
-    <color name="blue_300">#64b5f6</color>
+    <color name="blue_300">#2286c3</color>
     <color name="blue_100">#bbdefb</color>
     <color name="blue_600">#1e88e5</color>
     <color name="blue_500">#2196f3</color>
     <color name="blue_700">#1976d2</color>
     <color name="teal_200">#80cbc4</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
     <color name="grey_500">#bdbdbd</color>
 </resources>
