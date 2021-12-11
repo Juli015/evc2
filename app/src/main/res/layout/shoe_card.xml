@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:orientation="vertical"
         >
         <com.android.volley.toolbox.NetworkImageView
             android:id="@+id/shoe_image"
@@ -20,28 +20,30 @@
             android:background="?attr/colorPrimary"
             android:scaleType="centerCrop"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
-        >
-        <TextView
-            android:id="@+id/shoe_title"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="@string/shoe_title"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            />
-        <TextView
-            android:id="@+id/shoe_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="@string/shoe_description"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-            />
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <TextView
+                android:id="@+id/shoe_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/shoe_title"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+            <TextView
+                android:id="@+id/shoe_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/shoe_description"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                />
+        </LinearLayout>
     </LinearLayout>
+
 </com.google.android.material.card.MaterialCardView>
